@@ -26,14 +26,14 @@
 
     <form class="container">
     <div class="row">
-        <div class="col-md-2 form-group" action="worker.php" method="post">
+        <div class="col-md-2 form-group" action="./worker.php" method="post">
         <label for="Praynom">Pray deul' nom</label>
-            <input type="text" class="form-control" id=praynom placeholder="Eul' Praynom">
+            <input type="text" class="form-control" name="praynounet" id=praynom placeholder="Eul' Praynom">
         </div>
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea">Le message del la vida</label>
-            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+            <textarea class="form-control" name="messageounet" id="exampleFormControlTextarea" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Envoyay</button>
     </form>

@@ -1,9 +1,16 @@
-<script>
-    var praynom_re = /^[a-z-]+{2}$/i;
-    var praynom = $('#praynom');
+<?php
 
-    if ( ! praynom_re.test( praynom.val() ) ) {
-        console.log("Erreur sur le champ praynom");
-        send = false;
+$praynom = $_POST['praynounet'];
+$message = $_POST['messageounet'];
+
+if ('POST' === $_SERVER['REQUEST_METHOD']){
+    if (strlen($praynom) >= 2 && strlen($message) >=2){
+        echo 'Succès';
     }
-</script>
+    if (strlen($praynom) <2){
+        echo 'Erreur message';
+    }
+    if (strlen($message) <2){
+        echo 'Erreur message';
+    }
+}
