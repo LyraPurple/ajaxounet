@@ -10,6 +10,7 @@
     <title> Révision de formulaire </title>
 </head>
 <body>
+    <!-- http://localhost/ajax/03_Formulaire/ -->
     <h1>Formulaire basique</h1>
     <!--
         Formulaire avec AJAX:
@@ -21,16 +22,18 @@
         6. S'il y a des erreurs, on les affiche.
     -->
 
-    
 
-    <form>
+
+    <form class="container">
     <div class="row">
-        <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
+        <div class="col-md-2 form-group">
+        <label for="Praynom">Pray deul' nom</label>
+            <input type="text" class="form-control" placeholder="Eul' Praynom">
+        </div>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="exampleFormControlTextarea">Le message del la vida</label>
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
         </div>
     </form>
 
