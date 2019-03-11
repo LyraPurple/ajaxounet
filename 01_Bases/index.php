@@ -38,10 +38,10 @@
          * pour récupérer une nouvelle phrase et modifier le contenu du h1.
          */
 
-        var ElBoutono = document.getElementsByTagName('button');
+        var ElBoutono = document.getElementsByTagName('button')[0];
         ElBoutono.addEventListener('click', function () {
-        xhr.open('GET', './worker.php');
-        xhr.send();        
+            xhr.open('GET', './worker.php');
+            xhr.send();        
         });
         
     </script>    
