@@ -18,34 +18,23 @@
     
     <script>
 
-$(document).ready(function () {
-    // Exécuter une requête AJAX (en GET) avec jQuery
-    $.get('../01-bases/worker.php').done(function (response) {
-        alert(response);
-    }).fail(function (xhr)){
-        alert('La requête a échoué avec un status' +xhr.status);
-    }
+      $(document).ready(function () {
+          // Exécuter une requête AJAX (en GET) avec jQuery
+          $.get('../01-bases/worker.php').done(function (response) {
+              alert(response);
+          }).fail(function (xhr)){
+              alert('La requête a échoué avec un status' +xhr.status);
+          }
 
-    // Exécuter une requête AJAX (en POST)
-    $.ajax({
-        type: 'POST';
-        data: {sentence: 'Salut les gens'},
-        url: './worker.php'
-    }).done(function (response){
-        console.log(response);
-    })
-});
-
-
-
-
-
-
-
-
-
-
-
+          // Exécuter une requête AJAX (en POST)
+          $.ajax({
+              type: 'POST';
+              data: {sentence: 'Salut les gens'},
+              url: './worker.php'
+          }).done(function (response){
+              console.log(response);
+          })
+      });
     </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.slim.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
