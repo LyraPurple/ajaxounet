@@ -9,7 +9,7 @@
 <body>
     <h1>Mon titre</h1>
 
-    <span class="boutono">Le bouton générateur</span>
+    <button>Le bouton générateur</button>
 
     <script>
         // On instancie le moteur AJAX
@@ -38,9 +38,10 @@
          * pour récupérer une nouvelle phrase et modifier le contenu du h1.
          */
 
-        var ElBoutono = document.getElementsByClassName('boutono')[0];
+        var ElBoutono = document.getElementsByTagName('button');
         ElBoutono.addEventListener('click', function () {
-        document.getElementsByTagName('h1')[0].textContent = $sentences[array_rand($sentences)];
+        xhr.open('GET', './worker.php');
+        xhr.send();        
         });
         
     </script>    
