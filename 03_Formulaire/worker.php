@@ -8,7 +8,7 @@ if ('POST' === $_SERVER['REQUEST_METHOD']){
         echo 'Succès';
     }
     if (strlen($praynom) <2){
-        echo 'Erreur message';
+        echo 'Erreur praynom';
     }
     if (strlen($message) <2){
         echo 'Erreur message';
