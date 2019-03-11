@@ -28,7 +28,7 @@
     <div class="row">
         <div class="col-md-2 form-group" action="worker.php" method="post">
         <label for="Praynom">Pray deul' nom</label>
-            <input type="text" class="form-control" placeholder="Eul' Praynom">
+            <input type="text" class="form-control" id=praynom placeholder="Eul' Praynom">
         </div>
         </div>
         <div class="form-group">
