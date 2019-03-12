@@ -1,7 +1,7 @@
 <?php
 
 // Connexion à la BDD
-$db = new PDO('mysql:host=mysql.docker;dbname=smartphone;charset=utf8', 'root', '', [
+$db = new PDO('mysql:host=127.0.0.1;dbname=smartphone;charset=utf8', 'root', '', [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
 ]);
 

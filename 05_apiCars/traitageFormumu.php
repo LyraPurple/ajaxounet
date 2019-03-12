@@ -33,7 +33,7 @@ if ('POST' === $_SERVER['REQUEST_METHOD']) {
     if (empty($errors)) {
         echo json_encode(['success' => [
             'brand' => $brand,
-            'model' => $model
+            'model' => $model,
             'price' => $price,
             'image' => $image
         ]]);
