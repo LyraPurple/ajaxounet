@@ -1,0 +1,12 @@
+Pour le style de l'affichage du chat:
+https://getbootstrap.com/docs/4.3/components/media-object/#order
+
+
+htmlspecialchars
+Caractère 	Remplacement
+& (ET commercial) 	&amp;
+" (double guillement) 	&quot; sauf si ENT_NOQUOTES
+' (simple guillemet) 	&#039; (pour ENT_HTML401) ou &apos; (pour ENT_XML1, ENT_XHTML ou ENT_HTML5), mais seulement lorsque ENT_QUOTES est défini
+< (inférieur à) 	&lt;
+> (supérieur à) 	&gt;
+http://php.net/manual/fr/function.htmlspecialchars.php
