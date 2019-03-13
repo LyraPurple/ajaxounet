@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="fr">
   <head>
-    <!-- Required meta tags -->
+<!-- -------Adresse de le site -------
+    http://localhost/ajax/05_apiCars/
+    -------Adresse de le site ------- -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
